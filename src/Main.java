@@ -6,11 +6,14 @@ public class Main {
         int endSum =  2_459_000;
         int currentSum =  0;
         int fromSalary = 15000;
-        while (currentSum < endSum) {
+        float percSum = 0;
+        while ((currentSum + percSum )< endSum) {
+            percSum = percSum + currentSum * 0.01f ; // 12% в год - 1% в месяц
             currentSum = currentSum + fromSalary;
+
             monthNum ++ ;
+            System.out.println("Задание 1. Месяц " + monthNum + ", cумма накоплений равна " + (currentSum + percSum) + " рублей. Из них  "+ percSum + " рублей - некапитализированные %% ");
         }
-        System.out.println("Задание 1. Месяц " + monthNum + ", cумма накоплений равна " + currentSum + " рублей ");
 
     }
 }
