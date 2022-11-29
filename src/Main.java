@@ -1,3 +1,4 @@
+
 public class Main {
     public static void main(String[] args) {
 
@@ -14,6 +15,19 @@ public class Main {
             monthNum ++ ;
             System.out.println("Задание 1. Месяц " + monthNum + ", cумма накоплений равна " + (currentSum + percSum) + " рублей. Из них  "+ percSum + " рублей - некапитализированные %% ");
         }
-
+        // TASK 2
+        String sStr = "";
+        int i1 = 1;
+        while (i1 <= 10){
+            sStr = sStr + " " + i1;
+            i1++;
+        }
+        System.out.println("Задание 2. ");
+        System.out.println(sStr);
+        sStr = "";
+        for (i1 = 10; i1 != 0; i1--) {
+            sStr = sStr + " " + i1;
+        }
+        System.out.println(sStr);
     }
 }
