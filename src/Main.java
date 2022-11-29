@@ -29,5 +29,14 @@ public class Main {
             sStr = sStr + " " + i1;
         }
         System.out.println(sStr);
+
+        System.out.println("Задание 3. ");
+        int totalPopulation = 12_000_000;
+        int yearlyBornPer1000 = 17;
+        int yearlyDeathPer1000 = 8;
+        for (i1=1; i1<=10;i1++) {
+            totalPopulation = totalPopulation + totalPopulation/1000*(yearlyBornPer1000 - yearlyDeathPer1000);
+            System.out.println("Год " + i1 + " прошёл, численность населения составляет " + totalPopulation);
+        }
     }
 }
