@@ -38,5 +38,32 @@ public class Main {
             totalPopulation = totalPopulation + totalPopulation/1000*(yearlyBornPer1000 - yearlyDeathPer1000);
             System.out.println("Год " + i1 + " прошёл, численность населения составляет " + totalPopulation);
         }
+//      TASK 4 - 5
+        System.out.println("Задание 4. ");
+        monthNum = 0 ;
+        endSum =  12_000_000;
+        float currentSumF =  15000;
+        while (currentSumF < endSum) {
+
+            currentSumF = currentSumF + currentSumF * 0.07f ; //  7% в месяц;
+
+            monthNum ++ ;
+            if (monthNum % 6 ==0 )
+            System.out.println("Задание 5. Месяц " + monthNum + ", cумма накоплений равна " + currentSumF + " рублей. ");
+        }
+        System.out.println("Что бы накопить более " + endSum + " руб. понадобилось " + monthNum + " месяцев . ");
+
+        //      TASK 6
+        System.out.println("Задание 6. ");
+
+        currentSumF =  15000;
+        for ( monthNum=1; monthNum<=(9*12);monthNum++) {
+
+            currentSumF = currentSumF + currentSumF * 0.07f ; //  7% в месяц;
+
+            if (monthNum % 6 ==0 )
+                System.out.println("Задание 6. Месяц " + monthNum + ", cумма накоплений равна " + currentSumF + " рублей. ");
+        }
+        System.out.println("Через 9 лет сумма накоплений =  " + currentSumF + " руб.");
     }
 }
